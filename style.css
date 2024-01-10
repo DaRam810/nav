@@ -152,7 +152,20 @@ body {
 }
 
 /* *** END OF DROPDOWN ** */
-@media (max-width: 1470px) {
+
+@media (hover: hover) {
+	.dropdown:hover .dropdown__list {
+		display: block;
+	}
+}
+
+@media (hover: none) {
+	.dropdown:active .dropdown__list {
+		display: block;
+	}
+}
+
+@media (min-width: 4000px) {
 	.dropdown__list {
 		left: initial;
 		right: 0;
