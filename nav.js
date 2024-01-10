@@ -7,11 +7,7 @@ hamburgerEl.onclick = function () {
 	hamburgerEl.classList.toggle("hamburger--open");
 };
 
-/*
-navEl.addEventListener("click", () => {
-	navEl.classList.remove("nav--open");
-	hamburgerEl.classList.remove("hamburger--open");
-});*/
+
 
 document.onclick = function (e) {
 	if (!navEl.contains(e.target) && !hamburgerEl.contains(e.target)) {
@@ -19,4 +15,3 @@ document.onclick = function (e) {
 		hamburgerEl.classList.remove("hamburger--open");
 	}
 };
-
